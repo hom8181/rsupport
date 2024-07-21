@@ -11,19 +11,19 @@ password : 1234
 
 
 ## Database DDL
-create table notice
-(
-    nt_idx                 int auto_increment comment '공지사항 IDX' primary key,
-    title                  varchar(255) null comment '제목',
-    content                varchar(255) null comment '내용',
-    notice_start_date_time datetime     null comment '공지사항 시작 날짜',
-    notice_end_date_time   datetime     null comment '공지사항 종료 날짜',
-    hits                   int          null comment '조회수',
-    author                 varchar(20)  null comment '작성자',
-    registration_date_time datetime     null comment '등록 날짜',
-    modified_date_time     datetime     null comment '수정 날짜'
-)   comment '공지사항';
-
+create table notice  
+(  
+    nt_idx                 int auto_increment comment '공지사항 IDX' primary key,  
+    title                  varchar(255) null comment '제목',  
+    content                varchar(255) null comment '내용',  
+    notice_start_date_time datetime     null comment '공지사항 시작 날짜',  
+    notice_end_date_time   datetime     null comment '공지사항 종료 날짜',  
+    hits                   int          null comment '조회수',  
+    author                 varchar(20)  null comment '작성자',  
+    registration_date_time datetime     null comment '등록 날짜',  
+    modified_date_time     datetime     null comment '수정 날짜'  
+)   comment '공지사항';  
+   
 create table notice_attachment
 (
     na_idx     int auto_increment comment '공지사항 파일 IDX'
