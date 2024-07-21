@@ -46,5 +46,5 @@ create table notice_attachment
 
 
 ## 테스트 영상
-<img src="https://github.com/user-attachments/assets/e79e8ad8-4951-4412-90e5-6d80f3058605">
+![postman](https://github.com/user-attachments/assets/aa76b10b-6771-4f66-a447-328fef3b16e8)
 
