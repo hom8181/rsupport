@@ -45,5 +45,5 @@ create table notice_attachment
 - 'DELETE /notice'   : 공지사항 삭제
 
 
-## 테스트 영상
+## 실행 영상
 https://github.com/user-attachments/assets/92c423b2-5fe6-44db-a546-7bbf0cae9d6f
