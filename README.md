@@ -5,9 +5,9 @@
 - Spring Boot 3.3.1
 - Hibernate
 - MySQL 
-url : jdbc:mysql://127.0.0.1:3306/notice
-username : root
-password : 1234
+url : jdbc:mysql://127.0.0.1:3306/notice  
+username : root  
+password : 1234  
 
 
 ## Database DDL
@@ -23,18 +23,18 @@ create table notice
     registration_date_time datetime     null comment '등록 날짜',  
     modified_date_time     datetime     null comment '수정 날짜'  
 )   comment '공지사항';  
-   
-create table notice_attachment
-(
+     
+create table notice_attachment  
+(  
     na_idx     int auto_increment comment '공지사항 파일 IDX'
-        primary key,
-    notice     int          null comment '공지사항 IDX',
-    name       varchar(100) null comment '파일명',
-    byte_array longblob     null comment 'byteArray',
-    constraint notice_attachment_notice_nt_idx_fk
-        foreign key (notice) references notice (nt_idx)
-            on update cascade on delete cascade
-);
+        primary key,  
+    notice     int          null comment '공지사항 IDX',  
+    name       varchar(100) null comment '파일명',  
+    byte_array longblob     null comment 'byteArray',  
+    constraint notice_attachment_notice_nt_idx_fk  
+        foreign key (notice) references notice (nt_idx)  
+            on update cascade on delete cascade  
+);  
 
 
 ## API 구성
