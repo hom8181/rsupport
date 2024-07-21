@@ -10,7 +10,7 @@ username : root
 password : 1234
 
 
-## Database
+## Database DDL
 create table notice
 (
     nt_idx                 int auto_increment comment '공지사항 IDX' primary key,
