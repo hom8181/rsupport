@@ -10,7 +10,7 @@ username : root
 password : 1234
 
 
-## Database 구성
+## Database
 create table notice
 (
     nt_idx                 int auto_increment comment '공지사항 IDX' primary key,
